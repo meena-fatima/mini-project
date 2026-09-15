@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bright Future - Donation</title>
+  <link href="../boostrap/CSS/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./donate.css">
+  <style>
+    .whatsapp {
+      position: fixed;
+      animation: moves 2s infinite alternate-reverse;
+      z-index: 1;
+
+    }
+
+    .whatsapp img {
+      width: 50px;
+      border-radius: 10px;
+      margin-left: 205vh;
+
+
+    }
+
+    @keyframes moves {
+      0% {
+        left: 0px;
+        bottom: 0%;
+      }
+
+      50% {
+        right: 10px;
+      }
+
+      100% {
+        left: 0px;
+        bottom: 0%;
+      }
+    }
+
+    .arrow {
+      position: fixed;
+      animation: move 2s infinite alternate-reverse;
+      width: 30px;
+      height: 20px;
+      z-index: 1;
+    }
+
+    .arrow img {
+      width: 100%;
+
+    }
+
+    @keyframes move {
+      0% {
+        left: 0px;
+        bottom: 0%;
+      }
+
+      50% {
+        bottom: 50px;
+        left: 0px;
+      }
+
+      100% {
+        left: 0px;
+        bottom: 0%;
+      }
+
+    }
+
+    .head {
+      padding-left: 200px;
+    }
+
+    body {
+      background-color: #f4f8f5;
+    }
+
+    .navbar {
+      background-color: #013220;
+      height: 60px;
+    }
+
+    .feel {
+      padding-top: 45px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold fs-4" href="index.html">
+        🌱 Bright Future Foundation
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class=" collapse navbar-collapse" id="navbarNav">
+
+        <ul class="head navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+
+            <a class="btn btn-light text-success fw-bold" href="./donate.html">
+
+              Donate
+
+            </a>
+
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <section class="hero text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Support a Bright Future</h1>
+      <p class="lead">
+        Your donation can help provide education and opportunities
+        to children in need.
+      </p>
+    </div>
+  </section>
+  <section class="container" id="donate">
+
+    <div class="card shadow donation-card">
+      <div class="card-body p-4 p-md-5">
+
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Make a Donation</h2>
+
+          <p class="text-muted">
+            Every contribution helps a student move closer to a brighter future.
+          </p>
+        </div>
+
+
+        <h5 class="mb-3">Choose Donation Amount</h5>
+
+        <div class="row g-2 mb-4">
+
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-success w-50 ">
+              $10
+            </button>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-success w-50 ">
+              $25
+            </button>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-success w-50 ">
+              $50
+            </button>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-success w-50 ">
+              $100
+            </button>
+          </div>
+
+        </div>
+
+        <form>
+
+          <div class="mb-3">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="Enter your email">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Donation Amount</label>
+            <div class="input-group">
+              <span class="input-group-text">$</span>
+              <input type="number" class="form-control" placeholder="Enter amount">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message (Optional)</label>
+            <textarea class="form-control" rows="4" placeholder="Write a message"></textarea>
+          </div>
+
+          <button type="submit" class="btn donate-btn w-100">
+            ❤️ Donate Now
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+
+  </section>
+  <a href="#header">
+    <div class="arros">
+      <div class="arrow">
+        <img src="../img/arrow.png" alt="">
+      </div>
+    </div>
+  </a>
+  <div class="what">
+    <div class="whatsapp">
+      <img src="../img/img @.jpg" alt="">
+    </div>
+  </div>
+  <footer class="py-4">
+
+    <div class="container">
+
+      <div class="row g-4">
+
+        <div class="feel col-md-6">
+
+          <h4>Bright Future</h4>
+
+          <p>
+            Education Today, A Brighter Tomorrow.
+          </p>
+
+        </div>
+        <div class="col-md-3">
+
+          <h4>Contact Information</h4>
+
+          <p class="mb-1">Bribht Future Foundation ,Skardu</p>
+          <p class="mb-1">+921345678</p>
+          <p class="mb-1">+928765431</p>
+          <p>brightfuture@imail.com</p>
+
+
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="text-center">
+        <p class="mb-0">
+          © 2026 Bright Future. All Rights Reserved.
+        </p>
+      </div>
+
+    </div>
+
+  </footer>
+  <script src="../boostrap/JS/bootstrap.min.js"></script>
+
+</body>
+
+</html>

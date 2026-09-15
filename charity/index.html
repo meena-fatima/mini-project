@@ -4,99 +4,476 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bright Future</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../boostrap/CSS/bootstrap.min.css">
+
+    <title>Bright Future - Home</title>
+
+    <link href="../boostrap/CSS/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .whatsapp {
+            position: fixed;
+            animation: moves 2s infinite alternate-reverse;
+            z-index: 1;
+
+        }
+
+        .whatsapp img {
+            width: 50px;
+            border-radius: 10px;
+            margin-left: 205vh;
+
+
+        }
+
+        @keyframes moves {
+            0% {
+                left: 0px;
+                bottom: 0%;
+            }
+
+            50% {
+                right: 10px;
+            }
+
+            100% {
+                left: 0px;
+                bottom: 0%;
+            }
+        }
+
+        .arrow {
+            position: fixed;
+            animation: move 2s infinite alternate-reverse;
+            width: 30px;
+            height: 20px;
+            z-index: 1;
+        }
+
+        .arrow img {
+            width: 100%;
+
+        }
+
+        @keyframes move {
+            0% {
+                left: 0px;
+                bottom: 0%;
+            }
+
+            50% {
+                bottom: 50px;
+                left: 0px;
+            }
+
+            100% {
+                left: 0px;
+                bottom: 0%;
+            }
+
+        }
+
+
+        body {
+            background-color: #f4f8f5;
+        }
+
+        .navbar {
+            background-color: #013220;
+            height: 60px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(1, 50, 32, .80), rgba(1, 50, 32, .80)),
+                url("https://images.unsplash.com/photo-1509062522246-3755977927d7");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 70px 0;
+            height: 70vh;
+        }
+
+        .btn-green {
+            background-color: #013220;
+            color: white;
+            border: none;
+        }
+
+        .btn-green:hover {
+            background-color: #025c3b;
+            color: white;
+        }
+
+        .section-title {
+            color: #013220;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+        }
+
+        .program-icon {
+            font-size: 45px;
+        }
+
+        footer {
+            background-color: #013220;
+            color: white;
+            padding: 35px 0;
+        }
+
+        .carousel img {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .stats {
+            background-color: #013220;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card-icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 35px;
+        }
+
+        .card-btn {
+            width: 100%;
+            height: 20px;
+            border-color: #013220;
+            text-decoration: none;
+            list-style-type: none;
+            color: #013220;
+            border-radius: 10px solid #013220;
+        }
+
+        .feel {
+            padding-top: 45px;
+        }
+    </style>
 </head>
 
 <body>
-    <section id="header">
-        <header>
-            <div class="logo"><img src="../img/sun.jpg" alt=""></div>
-            <nav class="primaryheader">
-                <div class="home">Home</div>
-                <div class="home">About</div>
-                <div class="home">Academic</div>
-                <div class="pen">Admissions</div>
-                <div class="pen">Resources</div>
-                <div class="pin">Contact</div>
-            </nav>
-        </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold fs-4" href="index.html">
+                🌱 Bright Future Foundation
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="head navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+
+                        <a class="btn btn-light text-success fw-bold" href="./donate.html">
+
+                            Donate
+
+                        </a>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-center">
+
+        <div class="container">
+
+            <h1 class="display-3 fw-bold">
+                Bright Future
+            </h1>
+
+            <p class="lead fs-3">
+                Education Today, A Brighter Tomorrow
+            </p>
+
+            <p class="mx-auto" style="max-width:700px;">
+                We believe every child deserves a quality education.
+                Join us in creating opportunities and building a better future
+                through education.
+            </p>
+
+            <div class="mt-4">
+                <a href="#about" class="btn btn-outline-light btn-lg">
+                    Learn More
+                </a>
+
+            </div>
+
+        </div>
+
     </section>
-  <div class="cardbox">
+    <section class="section">
+        <h2>
+        </h2>
 
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">🎓 Scholarships</h5>
-            <p class="card-text">We help deserving students continue their education through scholarships.</p>
-            <button class="btn btn-outline-success">
-              Learn More
-            </button>
-        </div>
-    </div>
-    <div class="col-md-4">
+        <div class="cards">
 
-        <div class="card program-card h-100 w-75 shadow">
+            <div class="card">
+                <div class="card-icon">🧑‍🎓 </div>
+                <h3>Career Guidance</h3>
+                <p>
+                    We help students discover their interests, understand different career options, and make better
+                    their future.
+                </p>
+                <a href="http://127.0.0.1:5500/about.html" class="card-btn">Learn More</a>
+            </div>
 
-          <div class="card-body text-center">
+            <div class="card">
+                <div class="card-icon">🏫 </div>
+                <h3>School Development</h3>
+                <p>
+                    We help schools create better learning environments for students. We can include improving
+                    classrooms, supporting libraries, and access useful technology.
+                </p>
+                <a href="http://127.0.0.1:5500/wildlife.html" class="card-btn">Learn More</a>
+            </div>
 
-            <h3>📚 School Supplies</h3>
-
-            <p>
-              We provide books, bags, stationery and other
-              learning materials.
-            </p>
-
-            <button class="btn btn-outline-primary">
-              Learn More
-            </button>
-
-          </div>
-
-        </div>
-
-      </div><div class="card program-card h-100 w-75 shadow">
-
-          <div class="card-body text-center">
-
-            <h3>🎓 scholarships</h3>
-
-            <p>
-              We help deserving students continue their education
-              through scholarships.
-            </p>
-
-            <button class="btn btn-outline-primary">
-              Learn More
-            </button>
-
-          </div>
+            <div class="card">
+                <div class="card-icon">👩‍🏫 </div>
+                <h3>Teacher Support</h3>
+                <p>
+                    We support teachers by providing useful teaching materials, educational resources, and learning
+                    opportunities.
+                </p>
+                <a href="http://127.0.0.1:5500/landscapes.html" class="card-btn">Learn More</a>
+            </div>
 
         </div>
+    </section>
+    <section class="py-5">
 
-      </div>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+        <div class="container">
+
+            <div class="text-center mb-4">
+
+                <h2 class="section-title">
+                    Education Changes Lives
+                </h2>
+
+            </div>
+
+            <div id="educationCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner rounded-4 shadow">
+
+                    <div class="carousel-item active">
+
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" class="d-block w-100"
+                            alt="Education">
+
+                        <div class="carousel-caption">
+                            <h3>Every Child Can Learn</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655" class="d-block w-100"
+                            alt="Students">
+
+                        <div class="carousel-caption">
+                            <h3>Building Better Opportunities</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" class="d-block w-100"
+                            alt="Learning">
+
+                        <div class="carousel-caption">
+                            <h3>Creating a Bright Future</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#educationCarousel"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+
+                </button>
+
+
+                <button class="carousel-control-next" type="button" data-bs-target="#educationCarousel"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+
+                </button>
+
+            </div>
+
         </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+
+    </section>
+
+
+    <section id="impact" class="stats py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2>Our Impact</h2>
+                <p>
+                    Together, we can create meaningful change.
+                </p>
+            </div>
+
+            <div class="row text-center g-4">
+
+                <div class="col-6 col-lg-3">
+                    <div class="stat-number">500+</div>
+                    <p>Students Supported</p>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="stat-number">1000+</div>
+                    <p>Books Provided</p>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="stat-number">50+</div>
+                    <p>Scholarships</p>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="stat-number">20+</div>
+                    <p>Schools Reached</p>
+                </div>
+
+            </div>
+
         </div>
-    </div>
-  </div>
-      <a href="#header">
+
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="section-title">What We Believe</h2>
+                <p class="text-muted">
+                    Small actions can create a big difference.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-3 col-6">
+                    <div class="card mini-card text-center p-4">
+                        <div class="icon">📚</div>
+                        <h5 class="mt-3">Education</h5>
+                        <p class="small">
+                            Learning opens the door to new opportunities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card mini-card text-center p-4">
+                        <div class="icon">🎓</div>
+                        <h5 class="mt-3">Scholarships</h5>
+                        <p class="small">
+                            Helping students continue their education.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card mini-card text-center p-4">
+                        <div class="icon">💻</div>
+                        <h5 class="mt-3">Technology</h5>
+                        <p class="small">
+                            Connecting students with digital learning.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="card mini-card text-center p-4">
+                        <div class="icon">❤️</div>
+                        <h5 class="mt-3">Support</h5>
+                        <p class="small">
+                            Supporting students and their communities.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <a href="#header">
         <div class="arros">
             <div class="arrow">
                 <img src="../img/arrow.png" alt="">
@@ -108,43 +485,53 @@
             <img src="../img/img @.jpg" alt="">
         </div>
     </div>
-    <footer>
-        <div class="foot">
-            <h2>Quick Links </h2>
-            <ul>
-                <li>About Us</li>
-                <li>Admissions</li>
-                <li>Contact Us</li>
-            </ul>
+    <footer class="py-4">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="feel col-md-6">
+
+                    <h4>Bright Future</h4>
+
+                    <p>
+                        Education Today, A Brighter Tomorrow.
+                    </p>
+
+                </div>
+                <div class="col-md-3 col-lg-2 " >
+                    <h5 class="fs-1 text-white"></h5>
+                </div>
+                <div class="col-md-3">
+
+                    <h4>Contact Information</h4>
+
+                    <p class="mb-1">Bribht Future Foundation ,Skardu</p>
+                    <p class="mb-1">+921345678</p>
+                    <p class="mb-1">+928765431</p>
+                    <p>brightfuture@imail.com</p>
+
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+                <p class="mb-0">
+                    © 2026 Bright Future. All Rights Reserved.
+                </p>
+            </div>
+
         </div>
-        <div class="foot-1">
-            <h2>Academic</h2>
-            <ul>
-                <li>Resources</li>
-                <li>Life At NPIT</li>
-                <li>Apply Now</li>
-            </ul>
-        </div>
-        <div class="foot-2">
-            <h2>Adittional Info</h2>
-            <ul>
-                <li>FAQs</li>
-                <li>Student Portal</li>
-            </ul>
-        </div>
-        <div class="foot-3">
-            <h2>Contact Information</h2>
-            <p>NextPlanners Institute of Future <br> Technologies, Skardu.</p>
-            <p>+923555601122 |<br>+923555601122</p>
-            <p>maryamfhatima30@gmail.com</p>
-        </div>
+
     </footer>
-    <footer class="foot-4">
-        <div>
-            <p>© 2026 NextPlanners Institute of Future Technologies. All Rights Reserved.</p>
-        </div>
-    </footer>
-<script src="../boostrap/JS/bootstrap.min.js"></script>
+
+
+    <script src="../boostrap/JS/bootstrap.min.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="../boostrap/CSS/bootstrap.min.css">
+    <style>
+        .whatsapp {
+            position: fixed;
+            animation: moves 2s infinite alternate-reverse;
+            z-index: 1;
+
+        }
+
+        .whatsapp img {
+            width: 50px;
+            border-radius: 10px;
+            margin-left: 205vh;
+
+
+        }
+
+        @keyframes moves {
+            0% {
+                left: 0px;
+                bottom: 0%;
+            }
+
+            50% {
+                right: 10px;
+            }
+
+            100% {
+                left: 0px;
+                bottom: 0%;
+            }
+        }
+
+        .arrow {
+            position: fixed;
+            animation: move 2s infinite alternate-reverse;
+            width: 30px;
+            height: 20px;
+            z-index: 1;
+        }
+
+        .arrow img {
+            width: 100%;
+
+        }
+
+        @keyframes move {
+            0% {
+                left: 0px;
+                bottom: 0%;
+            }
+
+            50% {
+                bottom: 50px;
+                left: 0px;
+            }
+
+            100% {
+                left: 0px;
+                bottom: 0%;
+            }
+
+        }
+
+        .head {
+            padding-left: 200px;
+        }
+
+        .feel {
+            padding-top: 45px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold fs-4" href="index.html">
+                🌱 Bright Future Foundation
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" collapse navbar-collapse" id="navbarNav">
+
+                <ul class="head navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+
+                        <a class="btn btn-light text-success fw-bold" href="./donate.html">
+
+                            Donate
+
+                        </a>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="fw-bold">Get In Touch</h2>
+
+                <p class="text-muted">
+                    Have a question or want to support our mission?
+                    Contact us today.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4 mb-5">
+
+                <div class="col-md-4">
+
+                    <div class="card contact-card text-center p-4 h-100">
+
+                        <div class="contact-icon mb-3">📍</div>
+
+                        <h5>Our Address</h5>
+
+                        <p class="text-muted">
+                            Main Road, Skardu, Pakistan
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card contact-card text-center p-4 h-100">
+
+                        <div class="contact-icon mb-3">📧</div>
+
+                        <h5>Email Us</h5>
+
+                        <p class="text-muted">
+                            info@brightfuture.org
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card contact-card text-center p-4 h-100">
+
+                        <div class="contact-icon mb-3">📞</div>
+
+                        <h5>Call Us</h5>
+
+                        <p class="text-muted">
+                            +92 300 1234567
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    <div class="card contact-card p-4 p-md-5">
+
+                        <h3 class="fw-bold text-center mb-4">
+                            Send Us a Message
+                        </h3>
+
+                        <form>
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">Your Name</label>
+
+                                    <input type="text" class="form-control" placeholder="Enter your name" required>
+
+                                </div>
+
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">Email Address</label>
+
+                                    <input type="email" class="form-control" placeholder="Enter your email" required>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">Subject</label>
+
+                                <input type="text" class="form-control" placeholder="Enter subject">
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">Message</label>
+
+                                <textarea class="form-control" rows="5" placeholder="Write your message here..."
+                                    required></textarea>
+
+                            </div>
+
+
+                            <div class="text-center">
+
+                                <button type="submit" class="btn btn-success px-5 py-2">
+                                    Send Message
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <a href="#header">
+        <div class="arros">
+            <div class="arrow">
+                <img src="../img/arrow.png" alt="">
+            </div>
+        </div>
+    </a>
+    <div class="what">
+        <div class="whatsapp">
+            <img src="../img/img @.jpg" alt="">
+        </div>
+    </div>
+    <footer class="py-4">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="feel col-md-6">
+
+                    <h4>Bright Future</h4>
+
+                    <p>
+                        Education Today, A Brighter Tomorrow.
+                    </p>
+
+                </div>
+                <div class="col-md-3">
+
+                    <h4>Contact Information</h4>
+
+                    <p class="mb-1">Bribht Future Foundation ,Skardu</p>
+                    <p class="mb-1">+921345678</p>
+                    <p class="mb-1">+928765431</p>
+                    <p>brightfuture@imail.com</p>
+
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+                <p class="mb-0">
+                    © 2026 Bright Future. All Rights Reserved.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../boostrap/JS/bootstrap.min.js"></script>
+</body>
+
+</html>
